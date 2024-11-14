@@ -3,22 +3,29 @@ import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About";
 import ErrorComponent from "./Components/ErrorComponent";
 import { Container } from "@mui/material";
-
+import Skills from "./Pages/Skills";
+import "./App.css";
 function App() {
   return (
-    <Container
-      sx={{
-        bgcolor: "primary.main",
-        height: "100vh",
-      }}
-    >
+    <>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<About />} errorElement={<ErrorComponent />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<ErrorComponent />} />
-      </Routes>
-    </Container>
+      <Container
+        maxWidth={false}
+        sx={{
+          bgcolor: "background.default",
+          height: "100vh",
+          color: "text.primary",
+          paddingTop: { xs: 7, sm: 8 },
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<About />} errorElement={<ErrorComponent />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="*" element={<ErrorComponent />} />
+        </Routes>
+      </Container>
+    </>
   );
 }
 
