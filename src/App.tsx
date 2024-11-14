@@ -4,7 +4,6 @@ import About from "./Pages/About";
 import ErrorComponent from "./Components/ErrorComponent";
 import { Container } from "@mui/material";
 import Skills from "./Pages/Skills";
-import "./App.css";
 function App() {
   return (
     <>

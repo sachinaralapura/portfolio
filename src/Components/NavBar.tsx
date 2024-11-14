@@ -1,39 +1,41 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  Drawer,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemText,
-  Toolbar,
-} from "@mui/material";
+import { AppBar, Box, Button, Drawer, IconButton, Stack, Toolbar, Typography } from "@mui/material";
 import { ThemeContextType, useThemeContext } from "../Context/ThemeContext";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-const navItems: string[] = ["About", "Skills", "Blog", "Resume", "Contact"];
+import { useData } from "../Context/DataContext";
 
 const SideDrawer = () => {
+  const { navList } = useData();
   return (
-    <Box sx={{ width: "250px" }}>
-      <List>
-        {navItems.map((item) => (
-          <ListItemButton key={item}>
-            <NavLink to={item} style={{ color: "inherit", textDecoration: "none" }}>
-              <ListItemText primary={item} />
-            </NavLink>
-          </ListItemButton>
-        ))}
-      </List>
-    </Box>
+    <Stack sx={{ width: "200px" }} spacing={1}>
+      {navList.map((item) => (
+        <Button key={item} color="inherit">
+          <NavLink to={item} style={{ color: "inherit", textDecoration: "none" }}>
+            {({ isActive }) => (
+              <Typography
+                fontSize={20}
+                sx={{
+                  color: isActive ? "primary.main" : "inherit",
+                  px: 5,
+                  py: 1,
+                }}
+              >
+                {item}
+              </Typography>
+            )}
+          </NavLink>
+        </Button>
+      ))}
+    </Stack>
   );
 };
 
 function NavBar() {
+  const { navList } = useData();
+
   const { toggleTheme, themeMode }: ThemeContextType = useThemeContext();
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   const handleDrawerToggle = () => {
@@ -42,11 +44,11 @@ function NavBar() {
 
   return (
     <>
-      <AppBar position="fixed" elevation={3} sx={{ top: 0 }}>
+      <AppBar position="fixed" elevation={3} sx={{ top: 0 }} color="default">
         <Toolbar>
           {/* ----------------------- Menu Icon ----------------------- */}
 
-          <Box sx={{ flexGrow: 1, justifyContent: "start", display: { sm: "none" } }}>
+          <Box sx={{ flexGrow: 1, justifyContent: "start", display: { md: "none" } }}>
             <IconButton color="inherit" edge="start" onClick={handleDrawerToggle}>
               <MenuIcon />
             </IconButton>
@@ -54,20 +56,35 @@ function NavBar() {
 
           {/* ----------------------- Navbar Items ----------------------- */}
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} color="inherit">
+          <Stack
+            sx={{ flexGrow: 1, display: { xs: "none", md: "block" }, py: 1 }}
+            direction={"row"}
+            spacing={2}
+          >
+            {navList.map((item) => (
+              <Button key={item} color="inherit" variant="text">
                 <NavLink to={item} style={{ color: "inherit", textDecoration: "none" }}>
-                  {item}
+                  {({ isActive }) => (
+                    <Typography
+                      fontSize={20}
+                      sx={{
+                        color: isActive ? "primary.main" : "inherit",
+                        px: 4,
+                        py: 1,
+                      }}
+                    >
+                      {item}
+                    </Typography>
+                  )}
                 </NavLink>
               </Button>
             ))}
-          </Box>
+          </Stack>
 
           {/* ----------------------- Dark Mode Icon ----------------------- */}
 
           <IconButton color="inherit" onClick={toggleTheme}>
-            {themeMode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+            {themeMode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -78,7 +95,7 @@ function NavBar() {
         open={drawerOpen}
         anchor="left"
         onClose={handleDrawerToggle}
-        sx={{ display: { sm: "none" } }}
+        sx={{ display: { md: "none" } }}
       >
         <SideDrawer />
       </Drawer>

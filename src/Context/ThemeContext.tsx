@@ -1,6 +1,7 @@
 import { Theme } from "@emotion/react";
 import { createTheme, PaletteMode, ThemeProvider } from "@mui/material";
 import React, { createContext, useContext, useMemo, useState } from "react";
+import { useData } from "./DataContext";
 
 export interface ThemeContextType {
   toggleTheme: () => void;
@@ -14,12 +15,12 @@ export const useThemeContext = () => {
     ThemeContext
   );
 
-  if (!context)
-    throw new Error("useThemeContext must be used within ThemeContextProvider");
+  if (!context) throw new Error("useThemeContext must be used within ThemeContextProvider");
   return context;
 };
 
 const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { fontFamily } = useData();
   const [themeMode, setThemeMode] = useState<PaletteMode>("light");
   const toggleTheme = () => {
     setThemeMode((prev) => (prev === "light" ? "dark" : "light"));
@@ -31,8 +32,11 @@ const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         palette: {
           mode: themeMode,
         },
+        typography: {
+          fontFamily: `${fontFamily}, "Roboto", "Helvetica", "Arial", sans-serif`,
+        },
       }),
-    [themeMode]
+    [themeMode, fontFamily]
   );
 
   return (

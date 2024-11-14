@@ -1,0 +1,71 @@
+{
+  "fontFamily": "monospace",
+  "navList": ["About", "Skills", "Projects", "Blog", "Contact"],
+  "about": {
+    "name": "Sachin Rao",
+    "primary": "Hi I'm Sachin Rao.I'm a software engineer based in Bengaluru. I'm Passionate about building application and learning new technologies. In my spare time I love to play badminton, reading and listening to music.",
+    "secondary": ""
+  },
+
+  "skills": {
+    "skillList": [
+      {
+        "name": "HTML",
+        "image": "",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "CSS",
+        "image": "",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "JS",
+        "image": "",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "React",
+        "image": "",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "GIT",
+        "image": "",
+        "exp": 1,
+        "add": true
+      }
+    ]
+  },
+
+  "contact": [
+    {
+      "platform": "LinkedIn",
+      "link": "",
+      "img": "",
+      "add": true
+    },
+    {
+      "platform": "GitHub",
+      "link": "",
+      "img": "",
+      "add": true
+    },
+    {
+      "platform": "HackerRank",
+      "link": "",
+      "img": "",
+      "add": true
+    },
+    {
+      "platform": "𝕏",
+      "link": "",
+      "img": "",
+      "add": true
+    }
+  ]
+}
