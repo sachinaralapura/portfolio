@@ -1,14 +1,16 @@
 import { AppBar, Box, Button, Drawer, IconButton, Stack, Toolbar, Typography } from "@mui/material";
-import { ThemeContextType, useThemeContext } from "../Context/ThemeContext";
+import { useThemeContext } from "../Context/ThemeContext";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useData } from "../Context/DataContext";
+import { ThemeContextType } from "../utils/type";
 
 const SideDrawer = () => {
   const { navList } = useData();
+  const { themeMode } = useThemeContext();
   return (
     <Stack sx={{ width: "200px" }} spacing={1}>
       {navList.map((item) => (
@@ -18,7 +20,11 @@ const SideDrawer = () => {
               <Typography
                 fontSize={20}
                 sx={{
-                  color: isActive ? "primary.main" : "inherit",
+                  color: isActive
+                    ? themeMode === "dark"
+                      ? "primary.dark"
+                      : "primary.light"
+                    : "inherit",
                   px: 5,
                   py: 1,
                 }}
@@ -68,7 +74,11 @@ function NavBar() {
                     <Typography
                       fontSize={20}
                       sx={{
-                        color: isActive ? "primary.main" : "inherit",
+                        color: isActive
+                          ? themeMode === "dark"
+                            ? "primary.dark"
+                            : "primary.light"
+                          : "inherit",
                         px: 4,
                         py: 1,
                       }}

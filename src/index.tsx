@@ -5,13 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 import ThemeContextProvider from "./Context/ThemeContext";
 import { CssBaseline } from "@mui/material";
 import DataProvider from "./Context/DataContext";
-
+import Data from "./data.json";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <CssBaseline />
     <DataProvider>
-      <BrowserRouter basename="/portfolio/sachin">
+      <BrowserRouter basename={`/portfolio/${Data.about.fname}`}>
         <ThemeContextProvider>
           <App />
         </ThemeContextProvider>

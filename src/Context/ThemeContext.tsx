@@ -2,11 +2,7 @@ import { Theme } from "@emotion/react";
 import { createTheme, PaletteMode, ThemeProvider } from "@mui/material";
 import React, { createContext, useContext, useMemo, useState } from "react";
 import { useData } from "./DataContext";
-
-export interface ThemeContextType {
-  toggleTheme: () => void;
-  themeMode: PaletteMode;
-}
+import { ThemeContextType } from "../utils/type";
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 

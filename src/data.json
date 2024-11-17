@@ -2,8 +2,10 @@
   "fontFamily": "monospace",
   "navList": ["About", "Skills", "Projects", "Blog", "Contact"],
   "about": {
-    "name": "Sachin Rao",
-    "primary": "Hi I'm Sachin Rao.I'm a software engineer based in Bengaluru. I'm Passionate about building application and learning new technologies. In my spare time I love to play badminton, reading and listening to music.",
+    "fname": "Sachin",
+    "lname": "Rao",
+    "occ": "software engineer",
+    "primary": "based in Bengaluru. I'm Passionate about building application and learning new technologies. In my spare time I love to play badminton, reading and listening to music.",
     "secondary": ""
   },
 
@@ -11,36 +13,108 @@
     "skillList": [
       {
         "name": "HTML",
-        "image": "",
+        "image": "https://i.pinimg.com/736x/ca/e1/b4/cae1b4f6b223fe5a7bb712b680cffa67.jpg",
         "exp": 1,
-        "add": true
+        "add": false
       },
       {
         "name": "CSS",
-        "image": "",
+        "image": "https://i.pinimg.com/736x/75/e4/d6/75e4d6d5a0f6b8f4e4030f9b00511ca7.jpg",
         "exp": 1,
-        "add": true
+        "add": false
       },
       {
         "name": "JS",
-        "image": "",
+        "image": "https://i.pinimg.com/736x/af/1f/b4/af1fb4e8700c6aa2c5b8d3e915eb6e99.jpg",
         "exp": 1,
         "add": true
       },
       {
         "name": "React",
-        "image": "",
+        "image": "https://i.pinimg.com/736x/3f/26/40/3f2640efdb2a1805ebbdef5e3d373937.jpg",
+        "exp": 1,
+        "add": true
+      },
+
+      {
+        "name": "C++",
+        "image": "https://i.pinimg.com/236x/ff/03/e2/ff03e272b99f9aa0b467289a98b63084.jpg",
         "exp": 1,
         "add": true
       },
       {
+        "name": "Python",
+        "image": "https://i.pinimg.com/736x/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "MongoDb",
+        "image": "https://i.pinimg.com/236x/e8/ab/b4/e8abb49f605c7f61553c8268ef0a56aa.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "Angular",
+        "image": "https://i.pinimg.com/236x/e6/f3/20/e6f3204bd34862cd764314637857e193.jpg",
+        "exp": 1,
+        "add": true
+      },
+
+      {
         "name": "GIT",
-        "image": "",
+        "image": "https://i.pinimg.com/736x/a9/5a/ad/a95aadde4325065401dc6942ea5dad90.jpg",
         "exp": 1,
         "add": true
       }
     ]
   },
+
+  "projects": [
+    {
+      "name": "QuizWhiz",
+      "description": "The Interactive Quiz Application is designed to provide an engaging and challenging quiz experience. The capabilities of a Restful API and the Axios library, this application dynamically fetches quiz data to offer a seamless and diverse set of questions.The application can incorporate a scoring system to track users' progress",
+      "image": "https://i.pinimg.com/736x/43/85/4d/43854d48702c71afa673b160aadddfde.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/React-quiz.git",
+      "skills": ["React", "GIT", "HTML", "CSS", "JS"]
+    },
+    {
+      "name": "ToDone",
+      "description": "The application provides a streamlined interface for creating, organizing, and tracking tasks. To ensure data security and privacy, the application have user authentication using JWT. A MongoDB used to store user information and task data.",
+      "image": "https://i.pinimg.com/736x/00/11/9b/00119bff7b33010bd5ccbea97aa2d36a.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/TODO.git"
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "",
+      "link": "",
+      "githublink": ""
+    },
+    {
+      "name": "AAA",
+      "description": "",
+      "image": "",
+      "link": "",
+      "githublink": ""
+    },
+    {
+      "name": "Calculator",
+      "description": "",
+      "image": "",
+      "link": "https://sachinaralapura.github.io/WSA/Projects/Calculator/level2/",
+      "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/Calculator/level2"
+    },
+    {
+      "name": "Image Slider",
+      "description": "",
+      "image": "",
+      "link": "https://sachinaralapura.github.io/WSA/Projects/image_slider/level2/",
+      "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/image_slider/level2"
+    }
+  ],
 
   "contact": [
     {
