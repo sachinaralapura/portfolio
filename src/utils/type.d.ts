@@ -9,4 +9,18 @@ interface ThemeContextType {
   themeMode: PaletteMode;
 }
 
-export { project, ThemeContextType };
+type formDataType = { name: string; email: string; message: string };
+
+/**
+ * -1 - There is error message to display
+ *  0 - No message to display
+ * +1 - There is a success message to display
+ */
+type SnackMessageType = -1 | 0 | 1;
+
+interface SnackMessage {
+  messageType: SnackMessageType;
+  message?: string;
+}
+
+export { project, ThemeContextType, formDataType, SnackMessage };

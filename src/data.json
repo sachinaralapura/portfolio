@@ -87,59 +87,68 @@
       "githublink": "https://github.com/sachinaralapura/TODO.git"
     },
     {
-      "name": "",
-      "description": "",
-      "image": "",
+      "name": "Expenzo",
+      "description": "The Financial Management System is a comprehensive application designed to empower individuals with effective financial tracking and management tools. This project offers users the ability to manage their expenses, monitor accounts, and gain control over their financial well-being.",
+      "image": "https://i.pinimg.com/236x/0b/35/09/0b350904e322e07965177e321a148889.jpg",
       "link": "",
-      "githublink": ""
+      "githublink": "https://github.com/sachinaralapura/Financial-management-system.git"
     },
     {
-      "name": "AAA",
-      "description": "",
-      "image": "",
+      "name": "NovelNest",
+      "description": "The BookStore MERN Application is a modern and user-friendly platform for managing and exploring a collection of books. Built using the powerful MERN stack (MongoDB, Express, React, and Node.js), this application provides a seamless experience for both administrators and users.",
+      "image": "https://i.pinimg.com/236x/74/bf/8b/74bf8b39f26e126c2ed12c86f6a2067a.jpg",
       "link": "",
-      "githublink": ""
+      "githublink": "git@github.com:sachinaralapura/NovelNest.git"
     },
     {
       "name": "Calculator",
-      "description": "",
-      "image": "",
+      "description": "This is a fully functional calculator built using HTML, CSS, and JavaScript, designed with a sleek and modern interface. The calculator allows users to perform a wide range of basic and advanced mathematical operations with ease.",
+      "image": "https://i.pinimg.com/236x/72/7d/58/727d58554ce1c37412914d14c7951ad0.jpg",
       "link": "https://sachinaralapura.github.io/WSA/Projects/Calculator/level2/",
       "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/Calculator/level2"
     },
     {
-      "name": "Image Slider",
-      "description": "",
-      "image": "",
+      "name": "Image carousel",
+      "description": "The Image Carousel Application is an elegant and interactive component built using HTML, CSS, and JavaScript. It allows users to browse through a collection of images with smooth transitions and intuitive controls. This project is perfect for showcasing visual content like photo galleries, product displays, or featured images.",
+      "image": "https://i.pinimg.com/236x/da/1d/b1/da1db1452129ce8557f08c8983403752.jpg",
       "link": "https://sachinaralapura.github.io/WSA/Projects/image_slider/level2/",
       "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/image_slider/level2"
     }
   ],
 
-  "contact": [
-    {
-      "platform": "LinkedIn",
-      "link": "",
-      "img": "",
-      "add": true
+  "contact": {
+    "emailJs": {
+      "gmailId": "sachin.aralapura@gmail.com",
+      "serviceId": "service_fhnjps9",
+      "templateId": "template_zak3pv7",
+      "publicAPI": "ozlepfS3S0GiQqfQJ"
     },
-    {
-      "platform": "GitHub",
-      "link": "",
-      "img": "",
-      "add": true
-    },
-    {
-      "platform": "HackerRank",
-      "link": "",
-      "img": "",
-      "add": true
-    },
-    {
-      "platform": "𝕏",
-      "link": "",
-      "img": "",
-      "add": true
-    }
-  ]
+
+    "social": [
+      {
+        "platform": "LinkedIn",
+        "link": "",
+        "img": "",
+        "add": true
+      },
+      {
+        "platform": "GitHub",
+        "link": "",
+        "img": "",
+        "add": true
+      },
+      {
+        "platform": "HackerRank",
+        "link": "",
+        "img": "",
+        "add": true
+      },
+      {
+        "platform": "𝕏",
+        "link": "",
+        "img": "",
+        "add": true
+      }
+    ]
+  }
 }

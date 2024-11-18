@@ -4,7 +4,7 @@ import { useData } from "../Context/DataContext";
 function About() {
   const { about } = useData();
   return (
-    <Container maxWidth={false} sx={{ pt: 10 }}>
+    <Container maxWidth={false} sx={{ pt: 10, height: "calc(100vh - 64px)" }}>
       <Typography variant="h2" paddingBlockEnd={5} color="primary.dark" fontWeight={"bold"}>
         About me
       </Typography>
