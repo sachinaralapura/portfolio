@@ -127,26 +127,20 @@
     "social": [
       {
         "platform": "LinkedIn",
-        "link": "",
+        "link": "https://www.linkedin.com/in/sachin-as-25692320a/",
         "img": "",
         "add": true
       },
       {
         "platform": "GitHub",
-        "link": "",
+        "link": "https://github.com/sachinaralapura",
         "img": "",
         "add": true
       },
       {
         "platform": "HackerRank",
-        "link": "",
-        "img": "",
-        "add": true
-      },
-      {
-        "platform": "𝕏",
-        "link": "",
-        "img": "",
+        "link": "https://www.hackerrank.com/sachin_aralapura",
+        "img": "https://i.pinimg.com/236x/5d/84/93/5d84930516cac6c802a95671c9acf511.jpg",
         "add": true
       }
     ]

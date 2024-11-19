@@ -1,5 +1,6 @@
 import Data from "../data.json";
 
+export type DataType = typeof Data;
 interface project {
   projectProps: (typeof Data.projects)[number];
 }
@@ -23,4 +24,4 @@ interface SnackMessage {
   message?: string;
 }
 
-export { project, ThemeContextType, formDataType, SnackMessage };
+export { DataType, project, ThemeContextType, formDataType, SnackMessage };

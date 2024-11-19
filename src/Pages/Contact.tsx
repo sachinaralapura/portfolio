@@ -1,9 +1,21 @@
-import { Alert, Box, Button, Divider, Snackbar, Stack, TextField, Typography } from "@mui/material";
+import {
+  Alert,
+  Box,
+  Button,
+  Divider,
+  IconButton,
+  Snackbar,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { formDataType, SnackMessage } from "../utils/type";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import { useData } from "../Context/DataContext";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 function Contact() {
   const { contact } = useData();
   const [formData, setFormData] = useState<formDataType>({
@@ -51,7 +63,7 @@ function Contact() {
         flexDirection: "row",
       }}
     >
-      <Box flex={2} px={5}>
+      <Box flex={3} px={5}>
         <Stack spacing={10} component={"form"} onSubmit={handleSubmit}>
           <Typography variant="h3" color="primary.dark" fontWeight={"bold"}>
             Contact
@@ -96,15 +108,49 @@ function Contact() {
         </Stack>
       </Box>
       <Divider orientation="vertical" flexItem />
-      <Box flex={1} padding={5}>
-        {/* <Typography variant="h3" color="primary.dark" fontWeight={"bold"}>
-          Contact
-        </Typography>
-        <Stack spacing={10} paddingTop={10}>
-          <TextField variant="filled" label="Name" name="name" />
-          <TextField variant="filled" label="Email" name="" type="email" />
-          <TextField variant="filled" label="Message" multiline rows={10} />
-        </Stack> */}
+      <Box flex={2} padding={2}>
+        <Stack direction={"column"} spacing={8}>
+          {contact.social.map((items) => (
+            <Box
+              color={"GrayText"}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                backgroundColor: "InactiveBorder",
+                padding: 2,
+              }}
+            >
+              <Box sx={{ flex: 1 }} textAlign={"center"}>
+                {!items.img ? (
+                  <IconButton size="large" href={items.link} color="primary">
+                    {items.platform.toLowerCase() === "github" && <GitHubIcon />}
+                    {items.platform.toLowerCase() === "linkedin" && <LinkedInIcon />}
+                  </IconButton>
+                ) : (
+                  <Box
+                    component="img"
+                    src={items.img}
+                    sx={{
+                      width: 40,
+                      height: 40,
+                      borderRadius: "50%", // Optional: for rounded or circular images
+                    }}
+                  />
+                )}
+              </Box>
+              <Divider flexItem orientation="vertical" sx={{ marginRight: 3 }} />
+              <Typography variant="body1" flex={5}>
+                {items.link}
+              </Typography>
+              <Box sx={{ flex: 1 }} textAlign={"center"}>
+                <IconButton size="large" color="primary">
+                  <ContentCopyRoundedIcon />
+                </IconButton>
+              </Box>
+            </Box>
+          ))}
+        </Stack>
       </Box>
 
       <Snackbar

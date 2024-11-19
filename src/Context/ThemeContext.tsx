@@ -27,6 +27,9 @@ const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       createTheme({
         palette: {
           mode: themeMode,
+          // primary: {
+          //   main: "#2cdce6",
+          // },
         },
         typography: {
           fontFamily: `${fontFamily}, "Roboto", "Helvetica", "Arial", sans-serif`,

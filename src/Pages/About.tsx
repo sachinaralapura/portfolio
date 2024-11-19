@@ -1,6 +1,7 @@
 import { Container, Divider, Typography } from "@mui/material";
 import { useData } from "../Context/DataContext";
 
+
 function About() {
   const { about } = useData();
   return (

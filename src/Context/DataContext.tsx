@@ -1,7 +1,6 @@
 import { createContext, useContext } from "react";
 import Data from "../data.json";
-
-export type DataType = typeof Data;
+import { DataType } from "../utils/type";
 
 const DataContext = createContext<DataType | undefined>(undefined);
 
