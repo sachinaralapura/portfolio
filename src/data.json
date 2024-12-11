@@ -74,7 +74,7 @@
     {
       "name": "GComments",
       "description": "This VS Code extension leverages Ollama AI models to effortlessly generate comprehensive comments for your code, enhancing maintainability and readability.",
-      "Image": "https://drive.google.com/file/d/1yi4Ocz2gQTAl8Rim6qdDHpB5Zk6bcjbY/view?usp=sharing",
+      "image": "https://i.pinimg.com/1200x/bd/d1/a1/bdd1a136d1bd0837854c4ddd58b5d0d0.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/gcommet.git",
       "skills": ["GIT", "JS", "Typescript"]
