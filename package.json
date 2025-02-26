@@ -48,5 +48,5 @@
   "devDependencies": {
     "react-router-dom": "^6.28.0"
   },
-  "homepage": "/portfolio/sachin"
+  "homepage": "/"
 }

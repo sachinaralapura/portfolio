@@ -16,6 +16,7 @@ import { useData } from "../Context/DataContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
+import { link } from "fs";
 function Contact() {
   const { contact } = useData();
   const [formData, setFormData] = useState<formDataType>({
@@ -54,6 +55,11 @@ function Contact() {
       }
     );
   };
+
+  const clipboardCopy = (text: string) => {
+    navigator.clipboard.writeText(text)
+    setsnackbarMessage({ message: "copied to clipboard", messageType: 1 })
+  }
 
   return (
     <Box
@@ -143,7 +149,7 @@ function Contact() {
               <Typography variant="body1" flex={5}>
                 {items.link}
               </Typography>
-              <Box sx={{ flex: 1 }} textAlign={"center"}>
+              <Box sx={{ flex: 1 }} textAlign={"center"} onClick={() => { clipboardCopy(items.link) }}>
                 <IconButton size="large" color="primary">
                   <ContentCopyRoundedIcon />
                 </IconButton>
@@ -155,11 +161,15 @@ function Contact() {
 
       <Snackbar
         open={snackbarMessage.messageType !== 0}
-        autoHideDuration={3000}
+        autoHideDuration={2000}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         onClose={() => setsnackbarMessage({ messageType: 0, message: "" })}
       >
         <Alert severity={snackbarMessage.messageType === -1 ? "error" : "success"} icon={false}>
-          {snackbarMessage.message}
+
+          <Typography variant="h6">
+            {snackbarMessage.message}
+          </Typography>
         </Alert>
       </Snackbar>
     </Box>

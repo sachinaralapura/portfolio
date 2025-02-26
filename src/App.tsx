@@ -27,7 +27,7 @@ function App() {
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
     </Container>
-  );
+  );                                                                                
 }
 
 export default App;

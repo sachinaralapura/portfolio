@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/portfolio/sachin/static/js/main.809aa57c.js",
-    "index.html": "/portfolio/sachin/index.html",
-    "main.809aa57c.js.map": "/portfolio/sachin/static/js/main.809aa57c.js.map"
+    "main.js": "/static/js/main.fba52e74.js",
+    "index.html": "/index.html",
+    "main.fba52e74.js.map": "/static/js/main.fba52e74.js.map"
   },
   "entrypoints": [
-    "static/js/main.809aa57c.js"
+    "static/js/main.fba52e74.js"
   ]
 }

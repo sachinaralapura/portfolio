@@ -16,7 +16,7 @@ import { useData } from "../Context/DataContext";
 import { project } from "../utils/type.d";
 
 function Project({ projectProps }: project) {
-  console.log(projectProps);
+  // console.log(projectProps);
   return (
     <Card
       elevation={5}
@@ -78,6 +78,17 @@ function Project({ projectProps }: project) {
             </Button>
           )}
         </CardActions>
+
+
+        {projectProps?.skills &&
+          <Stack direction="row" spacing={2} alignItems="center" marginTop={2}>
+            <Typography variant="body2" fontWeight="bold">Skills : </Typography>
+            {projectProps?.skills?.map(skill => (
+              <Button key={skill} sx={{ bgcolor: "primary.light", color: "InfoText" }} >
+                {skill}
+              </Button>
+            ))}
+          </Stack>}
       </Box>
     </Card>
   );

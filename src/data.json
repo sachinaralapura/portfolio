@@ -1,6 +1,6 @@
 {
   "fontFamily": "monospace",
-  "navList": ["About", "Skills", "Projects", "Blog", "Contact"],
+  "navList": [ "About", "Skills", "Projects", "Blog", "Contact" ],
   "about": {
     "fname": "Sachin",
     "lname": "Rao",
@@ -66,18 +66,31 @@
         "image": "https://i.pinimg.com/736x/a9/5a/ad/a95aadde4325065401dc6942ea5dad90.jpg",
         "exp": 1,
         "add": true
+      }, {
+        "name": "Golang",
+        "image": "https://i.pinimg.com/736x/09/ce/62/09ce62889fc7b51ee68835ac7a2340f8.jpg",
+        "exp": 1,
+        "add": true
       }
     ]
   },
 
   "projects": [
     {
+      "name": "Shoebill",
+      "description": "Shoebill is a custom interpreter built in Go, implementing a C-like syntax with modern features. It supports variable bindings, integers, booleans, arithmetic expressions, built-in functions, and robust data structures like strings, arrays, and hashes.  Notably, Shoebill features first-class and higher-order functions, closures, and is parsed using a Pratt parsing technique. This project demonstrates my understanding of language design and implementation, from parsing to runtime environment.",
+      "image": "https://i.pinimg.com/736x/93/a3/35/93a335b598444d1284b6ddee118ebafd.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/Shoebill",
+      "skills": [ "Golang", "programming languages", "Interpreter", "parsing", "lexing" ]
+    },
+    {
       "name": "GComments",
       "description": "This VS Code extension leverages Ollama AI models to effortlessly generate comprehensive comments for your code, enhancing maintainability and readability.",
       "image": "https://i.pinimg.com/1200x/bd/d1/a1/bdd1a136d1bd0837854c4ddd58b5d0d0.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/gcommet.git",
-      "skills": ["GIT", "JS", "Typescript"]
+      "skills": [ "GIT", "JS", "Typescript" ]
     },
     {
       "name": "QuizWhiz",
@@ -85,7 +98,7 @@
       "image": "https://i.pinimg.com/736x/43/85/4d/43854d48702c71afa673b160aadddfde.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/React-quiz.git",
-      "skills": ["React", "GIT", "HTML", "CSS", "JS"]
+      "skills": [ "React", "GIT", "HTML", "CSS", "JS" ]
     },
     {
       "name": "ToDone",
@@ -93,6 +106,7 @@
       "image": "https://i.pinimg.com/736x/00/11/9b/00119bff7b33010bd5ccbea97aa2d36a.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/TODO.git"
+      , "skills": [ "Angular", "JWT", "MongoDb" ]
     },
     {
       "name": "Expenzo",
