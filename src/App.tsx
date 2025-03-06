@@ -19,8 +19,8 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<About />} errorElement={<ErrorComponent />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/" element={<About />}  />
+        <Route path="/About/" element={<About />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Contact" element={<Contact />} />
