@@ -7,7 +7,7 @@ function ErrorComponent() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/", { replace: true });
-    }, 5000);
+    }, 1000);
     return () => clearTimeout(timer);
   });
   return (
