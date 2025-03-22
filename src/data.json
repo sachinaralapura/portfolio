@@ -5,8 +5,8 @@
     "fname": "Sachin",
     "lname": "Rao",
     "occ": "software engineer",
-    "primary": "based in Bengaluru. I'm Passionate about building application and learning new technologies. In my spare time I love to play badminton, reading and listening to music.",
-    "secondary": ""
+    "primary": "Hi I'm Sachin Rao.I'm a software engineer based in Bengaluru.I'm Passionate about building application and learning new technologies.In my spare time I love to play badminton,reading and listening to music.",
+    "secondary": "I'm a 2024 computer science graduate from Vemana Institute of Technology.I have gained practical experience through academics and personal projects .I'm proficient in Javascript , Python, c++ and golang and have experience with Git and SQL.I'm passionate about software development and eager to learn and contribute to a team.Thank you "
   },
 
   "skills": {
@@ -34,8 +34,18 @@
         "image": "https://i.pinimg.com/736x/3f/26/40/3f2640efdb2a1805ebbdef5e3d373937.jpg",
         "exp": 1,
         "add": true
+      }, {
+        "name": "Express",
+        "image": "https://i.pinimg.com/736x/10/6d/23/106d230fb2dfec7d1fec8614ffa8fa3e.jpg",
+        "exp": 1,
+        "add": true
       },
-
+      {
+        "name": "Node",
+        "image": "https://i.pinimg.com/736x/5e/da/8d/5eda8d1a06e57a7789581bb22a37cab3.jpg",
+        "exp": 1,
+        "add": true
+      },
       {
         "name": "C++",
         "image": "https://i.pinimg.com/236x/ff/03/e2/ff03e272b99f9aa0b467289a98b63084.jpg",
