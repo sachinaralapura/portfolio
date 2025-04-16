@@ -1,0 +1,180 @@
+{
+  "fontFamily": "monospace",
+  "navList": [ "About", "Skills", "Projects", "Blog", "Contact" ],
+  "about": {
+    "fname": "Sachin",
+    "lname": "Rao",
+    "occ": "software engineer",
+    "primary": "Hi I'm Sachin Rao.I'm a software engineer based in Bengaluru.I'm Passionate about building application and learning new technologies.In my spare time I love to play badminton,reading and listening to music.",
+    "secondary": "I'm a 2024 computer science graduate from Vemana Institute of Technology.I have gained practical experience through academics and personal projects .I'm proficient in Javascript , Python, c++ and golang and have experience with Git and SQL.I'm passionate about software development and eager to learn and contribute to a team.Thank you "
+  },
+
+  "skills": {
+    "skillList": [
+      {
+        "name": "HTML",
+        "image": "https://i.pinimg.com/736x/ca/e1/b4/cae1b4f6b223fe5a7bb712b680cffa67.jpg",
+        "exp": 1,
+        "add": false
+      },
+      {
+        "name": "CSS",
+        "image": "https://i.pinimg.com/736x/75/e4/d6/75e4d6d5a0f6b8f4e4030f9b00511ca7.jpg",
+        "exp": 1,
+        "add": false
+      },
+      {
+        "name": "JS",
+        "image": "https://i.pinimg.com/736x/af/1f/b4/af1fb4e8700c6aa2c5b8d3e915eb6e99.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "React",
+        "image": "https://i.pinimg.com/736x/3f/26/40/3f2640efdb2a1805ebbdef5e3d373937.jpg",
+        "exp": 1,
+        "add": true
+      }, {
+        "name": "Express",
+        "image": "https://i.pinimg.com/736x/10/6d/23/106d230fb2dfec7d1fec8614ffa8fa3e.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "Node",
+        "image": "https://i.pinimg.com/736x/5e/da/8d/5eda8d1a06e57a7789581bb22a37cab3.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "C++",
+        "image": "https://i.pinimg.com/236x/ff/03/e2/ff03e272b99f9aa0b467289a98b63084.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "Python",
+        "image": "https://i.pinimg.com/736x/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "MongoDb",
+        "image": "https://i.pinimg.com/236x/e8/ab/b4/e8abb49f605c7f61553c8268ef0a56aa.jpg",
+        "exp": 1,
+        "add": true
+      },
+      {
+        "name": "Angular",
+        "image": "https://i.pinimg.com/236x/e6/f3/20/e6f3204bd34862cd764314637857e193.jpg",
+        "exp": 1,
+        "add": true
+      },
+
+      {
+        "name": "GIT",
+        "image": "https://i.pinimg.com/736x/a9/5a/ad/a95aadde4325065401dc6942ea5dad90.jpg",
+        "exp": 1,
+        "add": true
+      }, {
+        "name": "Golang",
+        "image": "https://i.pinimg.com/736x/09/ce/62/09ce62889fc7b51ee68835ac7a2340f8.jpg",
+        "exp": 1,
+        "add": true
+      }
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "Shoebill",
+      "description": "Shoebill is a custom interpreter built in Go, implementing a C-like syntax with modern features. It supports variable bindings, integers, booleans, arithmetic expressions, built-in functions, and robust data structures like strings, arrays, and hashes.  Notably, Shoebill features first-class and higher-order functions, closures, and is parsed using a Pratt parsing technique. This project demonstrates my understanding of language design and implementation, from parsing to runtime environment.",
+      "image": "https://i.pinimg.com/736x/93/a3/35/93a335b598444d1284b6ddee118ebafd.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/Shoebill",
+      "skills": [ "Golang", "programming languages", "Interpreter", "parsing", "lexing" ]
+    },
+    {
+      "name": "GComments",
+      "description": "This VS Code extension leverages Ollama AI models to effortlessly generate comprehensive comments for your code, enhancing maintainability and readability.",
+      "image": "https://i.pinimg.com/1200x/bd/d1/a1/bdd1a136d1bd0837854c4ddd58b5d0d0.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/gcommet.git",
+      "skills": [ "GIT", "JS", "Typescript" ]
+    },
+    {
+      "name": "QuizWhiz",
+      "description": "The Interactive Quiz Application is designed to provide an engaging and challenging quiz experience. The capabilities of a Restful API and the Axios library, this application dynamically fetches quiz data to offer a seamless and diverse set of questions.The application can incorporate a scoring system to track users' progress",
+      "image": "https://i.pinimg.com/736x/43/85/4d/43854d48702c71afa673b160aadddfde.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/React-quiz.git",
+      "skills": [ "React", "GIT", "HTML", "CSS", "JS" ]
+    },
+    {
+      "name": "ToDone",
+      "description": "The application provides a streamlined interface for creating, organizing, and tracking tasks. To ensure data security and privacy, the application have user authentication using JWT. A MongoDB used to store user information and task data.",
+      "image": "https://i.pinimg.com/736x/00/11/9b/00119bff7b33010bd5ccbea97aa2d36a.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/TODO.git"
+      , "skills": [ "Angular", "JWT", "MongoDb" ]
+    },
+    {
+      "name": "Expenzo",
+      "description": "The Financial Management System is a comprehensive application designed to empower individuals with effective financial tracking and management tools. This project offers users the ability to manage their expenses, monitor accounts, and gain control over their financial well-being.",
+      "image": "https://i.pinimg.com/236x/0b/35/09/0b350904e322e07965177e321a148889.jpg",
+      "link": "",
+      "githublink": "https://github.com/sachinaralapura/Financial-management-system.git"
+    },
+    {
+      "name": "NovelNest",
+      "description": "The BookStore MERN Application is a modern and user-friendly platform for managing and exploring a collection of books. Built using the powerful MERN stack (MongoDB, Express, React, and Node.js), this application provides a seamless experience for both administrators and users.",
+      "image": "https://i.pinimg.com/236x/74/bf/8b/74bf8b39f26e126c2ed12c86f6a2067a.jpg",
+      "link": "",
+      "githublink": "git@github.com:sachinaralapura/NovelNest.git"
+    },
+    {
+      "name": "Calculator",
+      "description": "This is a fully functional calculator built using HTML, CSS, and JavaScript, designed with a sleek and modern interface. The calculator allows users to perform a wide range of basic and advanced mathematical operations with ease.",
+      "image": "https://i.pinimg.com/236x/72/7d/58/727d58554ce1c37412914d14c7951ad0.jpg",
+      "link": "https://sachinaralapura.github.io/WSA/Projects/Calculator/level2/",
+      "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/Calculator/level2"
+    },
+    {
+      "name": "Image carousel",
+      "description": "The Image Carousel Application is an elegant and interactive component built using HTML, CSS, and JavaScript. It allows users to browse through a collection of images with smooth transitions and intuitive controls. This project is perfect for showcasing visual content like photo galleries, product displays, or featured images.",
+      "image": "https://i.pinimg.com/236x/da/1d/b1/da1db1452129ce8557f08c8983403752.jpg",
+      "link": "https://sachinaralapura.github.io/WSA/Projects/image_slider/level2/",
+      "githublink": "https://github.com/sachinaralapura/WSA/tree/main/Projects/image_slider/level2"
+    }
+  ],
+
+  "contact": {
+    "emailJs": {
+      "gmailId": "sachin.aralapura@gmail.com",
+      "serviceId": "service_fhnjps9",
+      "templateId": "template_zak3pv7",
+      "publicAPI": "ozlepfS3S0GiQqfQJ"
+    },
+
+    "social": [
+      {
+        "platform": "LinkedIn",
+        "link": "https://www.linkedin.com/in/sachin-as-25692320a/",
+        "img": "",
+        "add": true
+      },
+      {
+        "platform": "GitHub",
+        "link": "https://github.com/sachinaralapura",
+        "img": "",
+        "add": true
+      },
+      {
+        "platform": "HackerRank",
+        "link": "https://www.hackerrank.com/sachin_aralapura",
+        "img": "https://i.pinimg.com/236x/5d/84/93/5d84930516cac6c802a95671c9acf511.jpg",
+        "add": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "fontFamily": {
+      "type": "string"
+    },
+    "navList": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "about": {
+      "type": "object",
+      "properties": {
+        "fname": {
+          "type": "string"
+        },
+        "lname": {
+          "type": "string"
+        },
+        "occ": {
+          "type": "string"
+        },
+        "primary": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": "string"
+        }
+      },
+      "required": ["fname", "lname", "occ", "primary", "secondary"]
+    },
+    "skills": {
+      "type": "object",
+      "properties": {
+        "skillList": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "exp": {
+                  "type": "integer"
+                },
+                "add": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["name", "image", "exp", "add"]
+            }
+          ]
+        }
+      },
+      "required": ["skillList"]
+    },
+    "projects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "githublink": {
+              "type": "string"
+            }
+          },
+          "required": ["name", "description", "image", "link", "githublink", "skills"]
+        }
+      ]
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "emailJs": {
+          "type": "object",
+          "properties": {
+            "gmailId": {
+              "type": "string"
+            },
+            "serviceId": {
+              "type": "string"
+            },
+            "templateId": {
+              "type": "string"
+            },
+            "publicAPI": {
+              "type": "string"
+            }
+          },
+          "required": ["serviceId", "templateId", "publicAPI"]
+        },
+        "social": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "platform": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "img": {
+                  "type": "string"
+                },
+                "add": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["platform", "link", "img", "add"]
+            }
+          ]
+        }
+      },
+      "required": ["emailJs", "social"]
+    }
+  },
+  "required": ["navList", "about", "skills", "projects", "contact"]
+}
