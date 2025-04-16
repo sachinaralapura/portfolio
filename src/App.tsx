@@ -17,12 +17,12 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<Navigate to={"/about"} />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<BlogGrid />} />
+        <Route path="/" element={<Navigate to={"/About"} />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Blog" element={<BlogGrid />} />
         <Route path="*" element={<ErrorComponent />} />
       </Routes>
     </Container>
