@@ -4,5 +4,5 @@ import mdPlugin from "vite-plugin-md";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), mdPlugin()],
-  base : "/portfolio"
+  base: "/portfolio",
 });

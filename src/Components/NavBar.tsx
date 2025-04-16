@@ -98,6 +98,7 @@ function NavBar() {
                   {({ isActive }) => (
                     <Typography
                       fontSize={20}
+                      fontWeight={"bold"}
                       sx={{
                         color: isActive
                           ? themeMode === "dark"
