@@ -1,13 +1,16 @@
 import { Card, CardHeader, CardMedia, Container, Grid2 } from "@mui/material";
 import { useData } from "../Context/DataContext";
-import { Height } from "@mui/icons-material";
-import { useContext } from "react";
 
 function Skills() {
   const { skills } = useData();
   return (
     <Container maxWidth={false} sx={{ pt: 10, height: "calc(100vh - 64px)" }}>
-      <Grid2 container spacing={10} justifyContent={"center"} alignItems={"center"}>
+      <Grid2
+        container
+        spacing={10}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
         {skills.skillList.map(
           (skill, index) =>
             skill.add && (

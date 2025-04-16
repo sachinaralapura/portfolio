@@ -1,5 +1,4 @@
-import { Theme } from "@emotion/react";
-import { createTheme, PaletteMode, ThemeProvider } from "@mui/material";
+import { createTheme, PaletteMode, Theme, ThemeProvider } from "@mui/material";
 import React, { createContext, useContext, useMemo, useState } from "react";
 import { useData } from "./DataContext";
 import { ThemeContextType } from "../utils/type";
@@ -7,15 +6,18 @@ import { ThemeContextType } from "../utils/type";
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const useThemeContext = () => {
-  const context: ThemeContextType | undefined = useContext<ThemeContextType | undefined>(
-    ThemeContext
-  );
+  const context: ThemeContextType | undefined = useContext<
+    ThemeContextType | undefined
+  >(ThemeContext);
 
-  if (!context) throw new Error("useThemeContext must be used within ThemeContextProvider");
+  if (!context)
+    throw new Error("useThemeContext must be used within ThemeContextProvider");
   return context;
 };
 
-const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const { fontFamily } = useData();
   const [themeMode, setThemeMode] = useState<PaletteMode>("light");
   const toggleTheme = () => {
