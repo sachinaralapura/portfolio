@@ -54,7 +54,7 @@ console.log("Markdown Loaders Initialized:", markdownLoaders); // Debugging line
 // --- Assume blogMeta directly provides the list of posts ---
 const posts: BlogPost[] = blogMeta;
 
-export function BlogGrid() {
+export default function BlogGrid() {
   const [open, setOpen] = useState(false);
   // Store the metadata of the post selected for the dialog
   const [selectedPostMeta, setSelectedPostMeta] = useState<BlogPost | null>(

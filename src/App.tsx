@@ -6,7 +6,7 @@ import { Container } from "@mui/material";
 import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import Blog, { BlogGrid } from "./Pages/Blog";
+import BlogGrid from "./Pages/Blog";
 function App() {
   return (
     <Container
