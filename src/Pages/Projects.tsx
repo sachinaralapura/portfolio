@@ -8,6 +8,7 @@ import {
   CardMedia,
   Container,
   Divider,
+  Grid,
   Stack,
   Typography,
 } from "@mui/material";
@@ -79,16 +80,21 @@ function Project({ projectProps }: project) {
           )}
         </CardActions>
 
-
-        {projectProps?.skills &&
+        {projectProps?.skills && (
           <Stack direction="row" spacing={2} alignItems="center" marginTop={2}>
-            <Typography variant="body2" fontWeight="bold">Skills : </Typography>
-            {projectProps?.skills?.map(skill => (
-              <Button key={skill} sx={{ bgcolor: "primary.light", color: "InfoText" }} >
+            <Typography variant="body2" fontWeight="bold">
+              Skills :{" "}
+            </Typography>
+            {projectProps?.skills?.map((skill) => (
+              <Button
+                key={skill}
+                sx={{ bgcolor: "primary.light", color: "InfoText" }}
+              >
                 {skill}
               </Button>
             ))}
-          </Stack>}
+          </Stack>
+        )}
       </Box>
     </Card>
   );

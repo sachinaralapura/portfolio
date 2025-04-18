@@ -16,6 +16,7 @@ import { useData } from "../Context/DataContext";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
+import { Anchor, Phone } from "@mui/icons-material";
 function Contact() {
   const { contact } = useData();
   const [formData, setFormData] = useState<formDataType>({
@@ -127,9 +128,9 @@ function Contact() {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                backgroundColor: "InactiveBorder",
                 padding: 2,
               }}
+              key={items.platform}
             >
               <Box sx={{ flex: 1 }} textAlign={"center"}>
                 {!items.img ? (
@@ -140,9 +141,11 @@ function Contact() {
                     {items.platform.toLowerCase() === "linkedin" && (
                       <LinkedInIcon />
                     )}
+                    {items.platform.toLocaleLowerCase() === "tel" && <Phone />}
                   </IconButton>
                 ) : (
                   <Box
+                    onClick={() => (window.location.href = items.link)}
                     component="img"
                     src={items.img}
                     sx={{
@@ -158,9 +161,16 @@ function Contact() {
                 orientation="vertical"
                 sx={{ marginRight: 3 }}
               />
-              <Typography variant="body1" flex={5}>
-                {items.link}
-              </Typography>
+              {items.platform.toLocaleLowerCase() === "tel" ? (
+                <Typography variant="body1" flex={5}>
+                  <a href={`tel:${items.link}`}>{items.link}</a>
+                </Typography>
+              ) : (
+                <Typography variant="body1" flex={5}>
+                  {/* {items.link} */}
+                  {items.link}
+                </Typography>
+              )}
               <Box
                 sx={{ flex: 1 }}
                 textAlign={"center"}

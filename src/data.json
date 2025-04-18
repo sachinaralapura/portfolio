@@ -1,6 +1,6 @@
 {
   "fontFamily": "monospace",
-  "navList": [ "About", "Skills", "Projects", "Blog", "Contact" ],
+  "navList": ["About", "Skills", "Projects", "Blog", "Contact"],
   "about": {
     "fname": "Sachin",
     "lname": "Rao",
@@ -34,7 +34,8 @@
         "image": "https://i.pinimg.com/736x/3f/26/40/3f2640efdb2a1805ebbdef5e3d373937.jpg",
         "exp": 1,
         "add": true
-      }, {
+      },
+      {
         "name": "Express",
         "image": "https://i.pinimg.com/736x/10/6d/23/106d230fb2dfec7d1fec8614ffa8fa3e.jpg",
         "exp": 1,
@@ -76,7 +77,8 @@
         "image": "https://i.pinimg.com/736x/a9/5a/ad/a95aadde4325065401dc6942ea5dad90.jpg",
         "exp": 1,
         "add": true
-      }, {
+      },
+      {
         "name": "Golang",
         "image": "https://i.pinimg.com/736x/09/ce/62/09ce62889fc7b51ee68835ac7a2340f8.jpg",
         "exp": 1,
@@ -92,7 +94,13 @@
       "image": "https://i.pinimg.com/736x/93/a3/35/93a335b598444d1284b6ddee118ebafd.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/Shoebill",
-      "skills": [ "Golang", "programming languages", "Interpreter", "parsing", "lexing" ]
+      "skills": [
+        "Golang",
+        "programming languages",
+        "Interpreter",
+        "parsing",
+        "lexing"
+      ]
     },
     {
       "name": "GComments",
@@ -100,7 +108,7 @@
       "image": "https://i.pinimg.com/1200x/bd/d1/a1/bdd1a136d1bd0837854c4ddd58b5d0d0.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/gcommet.git",
-      "skills": [ "GIT", "JS", "Typescript" ]
+      "skills": ["GIT", "JS", "Typescript"]
     },
     {
       "name": "QuizWhiz",
@@ -108,15 +116,15 @@
       "image": "https://i.pinimg.com/736x/43/85/4d/43854d48702c71afa673b160aadddfde.jpg",
       "link": "",
       "githublink": "https://github.com/sachinaralapura/React-quiz.git",
-      "skills": [ "React", "GIT", "HTML", "CSS", "JS" ]
+      "skills": ["React", "GIT", "HTML", "CSS", "JS"]
     },
     {
       "name": "ToDone",
       "description": "The application provides a streamlined interface for creating, organizing, and tracking tasks. To ensure data security and privacy, the application have user authentication using JWT. A MongoDB used to store user information and task data.",
       "image": "https://i.pinimg.com/736x/00/11/9b/00119bff7b33010bd5ccbea97aa2d36a.jpg",
       "link": "",
-      "githublink": "https://github.com/sachinaralapura/TODO.git"
-      , "skills": [ "Angular", "JWT", "MongoDb" ]
+      "githublink": "https://github.com/sachinaralapura/TODO.git",
+      "skills": ["Angular", "JWT", "MongoDb"]
     },
     {
       "name": "Expenzo",
@@ -173,6 +181,12 @@
         "platform": "HackerRank",
         "link": "https://www.hackerrank.com/sachin_aralapura",
         "img": "https://i.pinimg.com/236x/5d/84/93/5d84930516cac6c802a95671c9acf511.jpg",
+        "add": true
+      },
+      {
+        "platform": "tel",
+        "link": "+917019928531",
+        "img": "",
         "add": true
       }
     ]
